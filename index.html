@@ -11,9 +11,9 @@
 
 
 
-<title>My awesome website</title>
+<title>NYC shootings</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
@@ -183,8 +183,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -192,16 +192,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -331,16 +324,37 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">About</a>
+  <a href="about.html">About the Data</a>
 </li>
 <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
-    <span class="fa fa-solid fa-bug"></span>
+  <a href="overview.html">Overview/Demographics</a>
+</li>
+<li>
+  <a href="mapping.html">Mapping</a>
+</li>
+<li>
+  <a href="timeanalyses.html">“Time analyses"</a>
+</li>
+<li>
+  <a href="holidays.html">Holidays</a>
+</li>
+<li>
+  <a href="screencast.html">Screencast</a>
+</li>
+<li>
+  <a href="projreport.html">Project Report</a>
+</li>
+<li>
+  <a href="references.html">References</a>
+</li>
+<li>
+  <a href="mailto:&lt;ag2965@cumc.columbia.edu&gt;">
+    <span class="fa fa-solid"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+  <a href="http://github.com/ag2965/">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -354,19 +368,12 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">My awesome website</h1>
+<h1 class="title toc-ignore">NYC shootings</h1>
 
 </div>
 
 
-<div id="this-is-jeffs-awesome-website" class="section level1">
-<h1>This is Jeff’s awesome website</h1>
-<p><img
-src="https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif" /></p>
-<p>This is my cat <img src="images/cat.jpg" /></p>
-<p>Here’s a direct link to the about page: <a
-href="about.html">about</a></p>
-</div>
+<p>NYC Shootings</p>
 
 
 
